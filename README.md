@@ -25,3 +25,29 @@ Helper methods for Android Mobile Application Development
 ### Usage
 * Place all or selected codes (depends on usage) inside any Java Class that extends Activity Class.
 * If you are using Android Studio, you may use shortcut keys Alt + Ins (Windows) to import necessary packages/libraries.
+
+### Sample Usage
+
+```java
+/* MainActivity.java */
+
+...
+
+	public class MainActivity extends AppCompatActivity {
+		@Override
+	    	protected void onCreate(Bundle savedInstanceState) {
+	    		super.onCreate(savedInstanceState);
+	        	uicActivityFullScreen();
+	        	setContentView(R.layout.activity_main);
+	    	}
+	}
+
+    public void uicActivityFullScreen(){
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar().hide();
+    }
+
+...
+
+```

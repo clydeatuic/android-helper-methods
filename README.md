@@ -35,10 +35,10 @@ Helper methods for Android Mobile Application Development
 
 	public class MainActivity extends AppCompatActivity {
 		@Override
-		protected void osuper.onCreate(savedInstanceState);
+		protected void onCreate(Bundle savedInstanceState) {
+			super.onCreate(savedInstanceState);
 			uicActivityFullScreen();
-			setContentView(R.layout.activity_main);nCreate(Bundle savedInstanceState) {
-			
+			setContentView(R.layout.activity_main);
 		}
 	}
 

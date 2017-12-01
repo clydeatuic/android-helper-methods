@@ -42,11 +42,11 @@ Helper methods for Android Mobile Application Development
 		}
 	}
 
-    public void uicActivityFullScreen(){
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getSupportActionBar().hide();
-    }
+	public void uicActivityFullScreen(){
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		getSupportActionBar().hide();
+	}
 
 ...
 

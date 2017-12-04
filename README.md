@@ -18,6 +18,16 @@ Helper methods for Android Mobile Application Development
         InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),InputMethodManager.RESULT_UNCHANGED_SHOWN);
     }
+    
+    public void uicSplashBasic(){
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                finish();
+            }
+        }, 3000);
+    }    
 
     /* ###########  UIC Helper Methods  ###########  */
 ```

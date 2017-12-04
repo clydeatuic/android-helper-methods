@@ -8,6 +8,7 @@ Helper methods for Android Mobile Application Development
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
+	/* Usage: Call method before setContentView(args) method. */
     }
 
     public void uicToastMessage(String message){

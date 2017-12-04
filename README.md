@@ -28,6 +28,7 @@ Helper methods for Android Mobile Application Development
                 finish();
             }
         }, 3000);
+	/*Usage: Make sure to follow class names assigned.*/
     }    
 
     /* ###########  UIC Helper Methods  ###########  */
